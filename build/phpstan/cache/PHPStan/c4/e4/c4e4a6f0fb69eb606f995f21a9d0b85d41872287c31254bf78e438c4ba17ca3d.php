@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-// odsl-/home/nckrtl/projects/orbit-dev/packages/app/src/UiServiceProvider.php-PHPStan\BetterReflection\Reflection\ReflectionClass-HardImpact\Orbit\Ui\UiServiceProvider
+// odsl-/home/nckrtl/projects/orbit-dev/packages/app/src/OrbitAppServiceProvider.php-PHPStan\BetterReflection\Reflection\ReflectionClass-HardImpact\Orbit\Ui\OrbitAppServiceProvider
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.65.0.9-8.5.2-20e5ebeb5758b86027c14724326f4f455912b40bb8fa0f53ce9a4314855a5107',
+   'variableKey' => 'v2-6.65.0.9-8.5.2-c60af00cb088d47b1193ee08b4abbf69c79f8872ace53744c3a040ca71dd587d',
    'data' => 
   array (
     'locatedSource' => 
@@ -10,13 +10,13 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       'class' => 'PHPStan\\BetterReflection\\SourceLocator\\Located\\LocatedSource',
       'data' => 
       array (
-        'name' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'filename' => '/home/nckrtl/projects/orbit-dev/packages/app/src/UiServiceProvider.php',
+        'name' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'filename' => '/home/nckrtl/projects/orbit-dev/packages/app/src/OrbitAppServiceProvider.php',
       ),
     ),
     'namespace' => 'HardImpact\\Orbit\\Ui',
-    'name' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-    'shortName' => 'UiServiceProvider',
+    'name' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+    'shortName' => 'OrbitAppServiceProvider',
     'isInterface' => false,
     'isTrait' => false,
     'isEnum' => false,
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 10,
-    'endLine' => 107,
+    'endLine' => 115,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Support\\ServiceProvider',
@@ -75,9 +75,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isVariadic' => false,
         'modifiers' => 1,
         'namespace' => 'HardImpact\\Orbit\\Ui',
-        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'currentClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'currentClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
         'aliasName' => NULL,
       ),
       'boot' => 
@@ -101,7 +101,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         ),
         'docComment' => NULL,
         'startLine' => 18,
-        'endLine' => 25,
+        'endLine' => 26,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -110,9 +110,44 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isVariadic' => false,
         'modifiers' => 1,
         'namespace' => 'HardImpact\\Orbit\\Ui',
-        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'currentClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'currentClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'aliasName' => NULL,
+      ),
+      'registerRouteBindings' => 
+      array (
+        'name' => 'registerRouteBindings',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'void',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 28,
+        'endLine' => 33,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 2,
+        'namespace' => 'HardImpact\\Orbit\\Ui',
+        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'currentClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
         'aliasName' => NULL,
       ),
       'registerMiddleware' => 
@@ -135,8 +170,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 27,
-        'endLine' => 52,
+        'startLine' => 35,
+        'endLine' => 60,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -145,9 +180,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isVariadic' => false,
         'modifiers' => 2,
         'namespace' => 'HardImpact\\Orbit\\Ui',
-        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'currentClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'currentClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
         'aliasName' => NULL,
       ),
       'configureVite' => 
@@ -170,8 +205,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 54,
-        'endLine' => 63,
+        'startLine' => 62,
+        'endLine' => 71,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -180,9 +215,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isVariadic' => false,
         'modifiers' => 2,
         'namespace' => 'HardImpact\\Orbit\\Ui',
-        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'currentClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'currentClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
         'aliasName' => NULL,
       ),
       'registerViews' => 
@@ -205,8 +240,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 65,
-        'endLine' => 69,
+        'startLine' => 73,
+        'endLine' => 77,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -215,9 +250,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isVariadic' => false,
         'modifiers' => 2,
         'namespace' => 'HardImpact\\Orbit\\Ui',
-        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'currentClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'currentClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
         'aliasName' => NULL,
       ),
       'routes' => 
@@ -243,8 +278,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * Register the package\'s routes.
  * Called by consuming apps in their RouteServiceProvider or bootstrap.
  */',
-        'startLine' => 75,
-        'endLine' => 86,
+        'startLine' => 83,
+        'endLine' => 94,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -253,9 +288,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isVariadic' => false,
         'modifiers' => 17,
         'namespace' => 'HardImpact\\Orbit\\Ui',
-        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'currentClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'currentClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
         'aliasName' => NULL,
       ),
       'registerPublishing' => 
@@ -278,8 +313,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 88,
-        'endLine' => 95,
+        'startLine' => 96,
+        'endLine' => 103,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -288,9 +323,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isVariadic' => false,
         'modifiers' => 2,
         'namespace' => 'HardImpact\\Orbit\\Ui',
-        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'currentClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'currentClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
         'aliasName' => NULL,
       ),
       'registerMcp' => 
@@ -315,8 +350,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * Register MCP routes for AI tool integration.
  */',
-        'startLine' => 100,
-        'endLine' => 106,
+        'startLine' => 108,
+        'endLine' => 114,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -325,9 +360,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isVariadic' => false,
         'modifiers' => 2,
         'namespace' => 'HardImpact\\Orbit\\Ui',
-        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
-        'currentClassName' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+        'declaringClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'implementingClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+        'currentClassName' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
         'aliasName' => NULL,
       ),
     ),

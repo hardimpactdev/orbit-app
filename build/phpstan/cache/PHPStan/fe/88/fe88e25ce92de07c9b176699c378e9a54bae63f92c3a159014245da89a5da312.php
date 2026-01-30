@@ -1,13 +1,13 @@
 <?php declare(strict_types = 1);
 
-// ftm-/home/nckrtl/projects/orbit-dev/packages/app/src/UiServiceProvider.php
+// ftm-/home/nckrtl/projects/orbit-dev/packages/app/src/OrbitAppServiceProvider.php
 return \PHPStan\Cache\CacheItem::__set_state(array(
    'variableKey' => 'v4-2.3.1',
    'data' => 
   array (
     0 => 
     array (
-      '110a3515705dfa598110bf525b6d9e92' => 
+      '9bcc81fe71080ba535822f7b0f6fa3ee' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'HardImpact\\Orbit\\Ui',
          'uses' => 
@@ -16,7 +16,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'vite' => 'Illuminate\\Support\\Facades\\Vite',
           'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
         ),
-         'className' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+         'className' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
          'functionName' => NULL,
          'templatePhpDocNodes' => 
         array (
@@ -32,7 +32,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
-      'a0258f18ab065de7ebef39ad020461fd' => 
+      '9e8ac890f6f7a5eb9354b2f74ad5b649' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'HardImpact\\Orbit\\Ui',
          'uses' => 
@@ -41,7 +41,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'vite' => 'Illuminate\\Support\\Facades\\Vite',
           'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
         ),
-         'className' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+         'className' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
          'functionName' => 'register',
          'templatePhpDocNodes' => 
         array (
@@ -57,7 +57,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
-      '326624316573730646efca533e2e5d26' => 
+      '2e1e70865800dab3f97d8397d77c65ea' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'HardImpact\\Orbit\\Ui',
          'uses' => 
@@ -66,7 +66,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'vite' => 'Illuminate\\Support\\Facades\\Vite',
           'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
         ),
-         'className' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+         'className' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
          'functionName' => 'boot',
          'templatePhpDocNodes' => 
         array (
@@ -82,7 +82,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
-      '3c78e72e7d3d21ac55db68f11db28df6' => 
+      '84bece6364fe6a83988e9b2b691fe331' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'HardImpact\\Orbit\\Ui',
          'uses' => 
@@ -91,7 +91,32 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'vite' => 'Illuminate\\Support\\Facades\\Vite',
           'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
         ),
-         'className' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+         'className' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
+         'functionName' => 'registerRouteBindings',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'fa714e34fdfe98b70cc9dc0f00367567' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'HardImpact\\Orbit\\Ui',
+         'uses' => 
+        array (
+          'route' => 'Illuminate\\Support\\Facades\\Route',
+          'vite' => 'Illuminate\\Support\\Facades\\Vite',
+          'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
+        ),
+         'className' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
          'functionName' => 'registerMiddleware',
          'templatePhpDocNodes' => 
         array (
@@ -107,7 +132,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
-      'cb16d1e7cb18ed46cd1a3c3b4c749165' => 
+      'eb7ffb8257db6659fccee32edd4bf9cb' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'HardImpact\\Orbit\\Ui',
          'uses' => 
@@ -116,7 +141,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'vite' => 'Illuminate\\Support\\Facades\\Vite',
           'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
         ),
-         'className' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+         'className' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
          'functionName' => 'configureVite',
          'templatePhpDocNodes' => 
         array (
@@ -132,7 +157,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
-      '144035a2c6f4c739804f6b38517a7161' => 
+      'b01f78493abd9907c35e159c6e15d2ca' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'HardImpact\\Orbit\\Ui',
          'uses' => 
@@ -141,7 +166,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'vite' => 'Illuminate\\Support\\Facades\\Vite',
           'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
         ),
-         'className' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+         'className' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
          'functionName' => 'registerViews',
          'templatePhpDocNodes' => 
         array (
@@ -157,7 +182,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
-      '78983039539908d4f962310c4d30b5ce' => 
+      '491e80bfff9947c27ea3350cf4b17afd' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'HardImpact\\Orbit\\Ui',
          'uses' => 
@@ -166,7 +191,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'vite' => 'Illuminate\\Support\\Facades\\Vite',
           'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
         ),
-         'className' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+         'className' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
          'functionName' => 'routes',
          'templatePhpDocNodes' => 
         array (
@@ -182,7 +207,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
-      'f8a2d72a430f8646d85a9d4e2a74abeb' => 
+      '3232aeaa3ad243103850a0673e22b983' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'HardImpact\\Orbit\\Ui',
          'uses' => 
@@ -191,7 +216,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'vite' => 'Illuminate\\Support\\Facades\\Vite',
           'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
         ),
-         'className' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+         'className' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
          'functionName' => 'registerPublishing',
          'templatePhpDocNodes' => 
         array (
@@ -207,7 +232,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
-      '8a27b2800d51ef94a8bda7ba72555bcd' => 
+      '76ce76df50a2bc7951cf86dd006176f0' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'HardImpact\\Orbit\\Ui',
          'uses' => 
@@ -216,7 +241,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'vite' => 'Illuminate\\Support\\Facades\\Vite',
           'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
         ),
-         'className' => 'HardImpact\\Orbit\\Ui\\UiServiceProvider',
+         'className' => 'HardImpact\\Orbit\\Ui\\OrbitAppServiceProvider',
          'functionName' => 'registerMcp',
          'templatePhpDocNodes' => 
         array (
@@ -235,7 +260,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      '/home/nckrtl/projects/orbit-dev/packages/app/src/UiServiceProvider.php' => '20e5ebeb5758b86027c14724326f4f455912b40bb8fa0f53ce9a4314855a5107',
+      '/home/nckrtl/projects/orbit-dev/packages/app/src/OrbitAppServiceProvider.php' => 'c60af00cb088d47b1193ee08b4abbf69c79f8872ace53744c3a040ca71dd587d',
     ),
   ),
 ));

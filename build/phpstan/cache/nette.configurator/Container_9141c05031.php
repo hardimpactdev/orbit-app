@@ -14,7 +14,7 @@
 
 declare(strict_types=1);
 
-class Container_b39feace00 extends _PHPStan_ef7e5b90a\Nette\DI\Container
+class Container_9141c05031 extends _PHPStan_ef7e5b90a\Nette\DI\Container
 {
 	protected $tags = [
 		'phpstan.broker.dynamicMethodReturnTypeExtension' => [
@@ -2805,7 +2805,120 @@ class Container_b39feace00 extends _PHPStan_ef7e5b90a\Nette\DI\Container
 
 	public function createService042(): PHPStan\Analyser\Ignore\IgnoredErrorHelper
 	{
-		return new PHPStan\Analyser\Ignore\IgnoredErrorHelper($this->getService('05'), [], true);
+		return new PHPStan\Analyser\Ignore\IgnoredErrorHelper(
+			$this->getService('05'),
+			[
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$cli_version\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 2,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/EnvironmentController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$is_local\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 7,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/EnvironmentController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$name\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 6,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/EnvironmentController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$tld\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 3,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/EnvironmentController.php',
+				],
+				[
+					'message' => '#^Expression on left side of \?\? is not nullable\.$#',
+					'identifier' => 'nullCoalesce.expr',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/EnvironmentController.php',
+				],
+				[
+					'message' => '#^Offset \'exists\' on array\{exists\: bool, error\?\: string\} on left side of \?\? always exists and is not nullable\.$#',
+					'identifier' => 'nullCoalesce.offset',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/EnvironmentController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\TrackedJob\:\:\$status\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/JobController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$host\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$is_local\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 2,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$provisioning_error\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$provisioning_log\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$provisioning_step\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$provisioning_total_steps\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$status\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 2,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Call to static method checkExistingSetup\(\) on an unknown class App\\\Services\\\ProvisioningService\.$#',
+					'identifier' => 'class.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\SshKey\:\:\$is_default\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/SshKeyController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\SshKey\:\:\$name\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 4,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/SshKeyController.php',
+				],
+				[
+					'message' => '#^Cannot access property \$id on object\|string\.$#',
+					'identifier' => 'property.nonObject',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Middleware/HandleInertiaRequests.php',
+				],
+			],
+			true
+		);
 	}
 
 
@@ -4970,7 +5083,7 @@ class Container_b39feace00 extends _PHPStan_ef7e5b90a\Nette\DI\Container
 			['/home/nckrtl/projects/orbit-dev/packages/app'],
 			$this->getParameter('analysedPathsFromConfig'),
 			'5',
-			'/home/nckrtl/projects/orbit-dev/packages/app/phpstan-baseline.neon',
+			null,
 			null,
 			$this->getParameter('singleReflectionFile'),
 			$this->getParameter('singleReflectionInsteadOfFile')
@@ -5080,7 +5193,7 @@ class Container_b39feace00 extends _PHPStan_ef7e5b90a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_b39feace00 $container)
+			public function __construct(Container_9141c05031 $container)
 			{
 				$this->container = $container;
 			}
@@ -5100,7 +5213,7 @@ class Container_b39feace00 extends _PHPStan_ef7e5b90a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_b39feace00 $container)
+			public function __construct(Container_9141c05031 $container)
 			{
 				$this->container = $container;
 			}
@@ -5148,7 +5261,7 @@ class Container_b39feace00 extends _PHPStan_ef7e5b90a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_b39feace00 $container)
+			public function __construct(Container_9141c05031 $container)
 			{
 				$this->container = $container;
 			}
@@ -5173,7 +5286,7 @@ class Container_b39feace00 extends _PHPStan_ef7e5b90a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_b39feace00 $container)
+			public function __construct(Container_9141c05031 $container)
 			{
 				$this->container = $container;
 			}
@@ -5193,7 +5306,7 @@ class Container_b39feace00 extends _PHPStan_ef7e5b90a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_b39feace00 $container)
+			public function __construct(Container_9141c05031 $container)
 			{
 				$this->container = $container;
 			}
@@ -5257,7 +5370,7 @@ class Container_b39feace00 extends _PHPStan_ef7e5b90a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_b39feace00 $container)
+			public function __construct(Container_9141c05031 $container)
 			{
 				$this->container = $container;
 			}
@@ -5314,7 +5427,7 @@ class Container_b39feace00 extends _PHPStan_ef7e5b90a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_b39feace00 $container)
+			public function __construct(Container_9141c05031 $container)
 			{
 				$this->container = $container;
 			}
@@ -5372,7 +5485,7 @@ class Container_b39feace00 extends _PHPStan_ef7e5b90a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_b39feace00 $container)
+			public function __construct(Container_9141c05031 $container)
 			{
 				$this->container = $container;
 			}
@@ -8751,7 +8864,7 @@ class Container_b39feace00 extends _PHPStan_ef7e5b90a\Nette\DI\Container
 	}
 
 
-	public function createServiceContainer(): Container_b39feace00
+	public function createServiceContainer(): Container_9141c05031
 	{
 		return $this;
 	}
@@ -9291,7 +9404,116 @@ class Container_b39feace00 extends _PHPStan_ef7e5b90a\Nette\DI\Container
 			'tipsOfTheDay' => true,
 			'reportMagicMethods' => true,
 			'reportMagicProperties' => true,
-			'ignoreErrors' => [],
+			'ignoreErrors' => [
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$cli_version\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 2,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/EnvironmentController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$is_local\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 7,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/EnvironmentController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$name\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 6,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/EnvironmentController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$tld\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 3,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/EnvironmentController.php',
+				],
+				[
+					'message' => '#^Expression on left side of \?\? is not nullable\.$#',
+					'identifier' => 'nullCoalesce.expr',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/EnvironmentController.php',
+				],
+				[
+					'message' => '#^Offset \'exists\' on array\{exists\: bool, error\?\: string\} on left side of \?\? always exists and is not nullable\.$#',
+					'identifier' => 'nullCoalesce.offset',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/EnvironmentController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\TrackedJob\:\:\$status\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/JobController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$host\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$is_local\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 2,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$provisioning_error\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$provisioning_log\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$provisioning_step\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$provisioning_total_steps\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\Environment\:\:\$status\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 2,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Call to static method checkExistingSetup\(\) on an unknown class App\\\Services\\\ProvisioningService\.$#',
+					'identifier' => 'class.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/ProvisioningController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\SshKey\:\:\$is_default\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/SshKeyController.php',
+				],
+				[
+					'message' => '#^Access to an undefined property HardImpact\\\Orbit\\\Core\\\Models\\\SshKey\:\:\$name\.$#',
+					'identifier' => 'property.notFound',
+					'count' => 4,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Controllers/SshKeyController.php',
+				],
+				[
+					'message' => '#^Cannot access property \$id on object\|string\.$#',
+					'identifier' => 'property.nonObject',
+					'count' => 1,
+					'path' => '/home/nckrtl/projects/orbit-dev/packages/app/src/Http/Middleware/HandleInertiaRequests.php',
+				],
+			],
 			'internalErrorsCountLimit' => 50,
 			'cache' => [
 				'nodesByStringCountMax' => 256,
@@ -9482,30 +9704,32 @@ class Container_b39feace00 extends _PHPStan_ef7e5b90a\Nette\DI\Container
 				'/home/nckrtl/projects/orbit-dev/packages/app/phpstan-baseline.neon',
 			],
 			'composerAutoloaderProjectPaths' => ['/home/nckrtl/projects/orbit-dev/packages/app'],
-			'generateBaselineFile' => '/home/nckrtl/projects/orbit-dev/packages/app/phpstan-baseline.neon',
+			'generateBaselineFile' => null,
 			'usedLevel' => '5',
 			'cliAutoloadFile' => null,
 			'env' => [
-				'SHELL' => '/bin/bash',
-				'AGENT' => '1',
-				'MEMORY_PRESSURE_WRITE' => 'c29tZSAyMDAwMDAgMjAwMDAwMAA=',
-				'PWD' => '/home/nckrtl/projects/orbit-dev/packages/app',
-				'LOGNAME' => 'nckrtl',
-				'SYSTEMD_EXEC_PID' => '833819',
-				'HOME' => '/home/nckrtl',
-				'OPENCODE' => '1',
-				'LANG' => 'en_US.UTF-8',
-				'MEMORY_PRESSURE_WATCH' => '/sys/fs/cgroup/system.slice/opencode.service/memory.pressure',
-				'INVOCATION_ID' => '945956e206894c8eb6452f816ddd89a9',
 				'USER' => 'nckrtl',
+				'AGENT' => '1',
 				'SHLVL' => '1',
-				'JOURNAL_STREAM' => '8:5616000',
-				'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin',
+				'HOME' => '/home/nckrtl',
 				'OLDPWD' => '/home/nckrtl/projects/orbit-dev',
-				'_' => 'vendor/bin/phpstan',
+				'SYSTEMD_EXEC_PID' => '1178191',
+				'COMPOSER_BINARY' => '/usr/local/bin/composer',
+				'SHELL_VERBOSITY' => '0',
+				'LOGNAME' => 'nckrtl',
+				'JOURNAL_STREAM' => '8:8167124',
+				'_' => '/usr/local/bin/composer',
+				'MEMORY_PRESSURE_WATCH' => '/sys/fs/cgroup/system.slice/opencode.service/memory.pressure',
+				'OPENCODE' => '1',
+				'PATH' => '/home/nckrtl/projects/orbit-dev/packages/app/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin',
+				'INVOCATION_ID' => 'd5be4670ea48483c817a80a99e279dd1',
+				'LANG' => 'en_US.UTF-8',
+				'SHELL' => '/bin/bash',
+				'PHP_BINARY' => '/usr/bin/php8.5',
+				'PWD' => '/home/nckrtl/projects/orbit-dev/packages/app',
+				'MEMORY_PRESSURE_WRITE' => 'c29tZSAyMDAwMDAgMjAwMDAwMAA=',
 				'LINES' => '50',
 				'COLUMNS' => '80',
-				'SHELL_VERBOSITY' => '0',
 			],
 		];
 	}

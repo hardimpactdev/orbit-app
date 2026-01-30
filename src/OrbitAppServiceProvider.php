@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\ServiceProvider;
 
-class UiServiceProvider extends ServiceProvider
+class OrbitAppServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
