@@ -14,11 +14,11 @@ use Laravel\Mcp\Server\Tool;
 use Laravel\Mcp\Server\Tools\Annotations\IsReadOnly;
 
 #[IsReadOnly]
-final class GatewayCloudflareStatusTool extends Tool
+final class GatewayCloudflareZonesTool extends Tool
 {
-    protected string $name = 'gateway_cloudflare_status';
+    protected string $name = 'gateway_cloudflare_zones';
 
-    protected string $description = 'Get Cloudflare zone info and SSL mode';
+    protected string $description = 'List all available Cloudflare zones for the configured API token';
 
     public function __construct(
         protected CloudflareService $cloudflare,
@@ -31,36 +31,30 @@ final class GatewayCloudflareStatusTool extends Tool
 
     public function schema(JsonSchema $schema): array
     {
-        return [
-            'zone_id' => $schema->string()->description('Cloudflare zone ID (falls back to global setting)'),
-        ];
+        return [];
     }
 
     public function handle(Request $request): ResponseFactory
     {
-        $zoneId = $request->get('zone_id');
+        $zones = $this->cloudflare->listZones();
 
-        if (! $this->cloudflare->isConfigured($zoneId)) {
+        if ($zones === []) {
             return Response::structured([
                 'success' => false,
-                'error' => 'Cloudflare not configured. Run: orbit cloudflare:configure',
+                'error' => 'No zones returned. Run: orbit cloudflare:configure',
             ]);
         }
 
-        $zone = $this->cloudflare->getZone($zoneId);
-
-        if (! $zone) {
-            return Response::structured(['success' => false, 'error' => 'Failed to fetch zone info']);
-        }
+        $mapped = array_map(fn (array $z) => [
+            'id' => $z['id'],
+            'name' => $z['name'],
+            'status' => $z['status'] ?? null,
+        ], $zones);
 
         return Response::structured([
             'success' => true,
-            'zone' => [
-                'id' => $zone['id'],
-                'name' => $zone['name'],
-                'status' => $zone['status'],
-                'name_servers' => $zone['name_servers'] ?? [],
-            ],
+            'zones' => $mapped,
+            'total' => count($mapped),
         ]);
     }
 }
